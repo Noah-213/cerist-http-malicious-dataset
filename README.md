@@ -82,5 +82,3 @@ Bennouar, T., & Hani, N. (2025). Analysis of Simulated Malicious HTTP Traffic at
 > **Disclaimer:** This repository is for research and educational purposes only. The generated datasets are synthetic and must not be considered as a direct representation of real-world network traffic.
 
 ---
-
-### **Version française possible aussi, demande si besoin !**
