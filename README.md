@@ -4,12 +4,16 @@ This repository contains all the scripts, Jupyter notebooks, and intermediate/fi
 
 ## 📄 Project Overview
 
-This project aims to:
+This project aimed to:
 
 * Extract, clean, and structure HTTP traffic from PCAP files simulating various web attacks (LFI, SQLi, XSS, SSTI, etc.).
-* Build a reproducible data pipeline from raw packet capture to a clean, analysis-ready dataset.
+* Build a transparent data pipeline from raw packet capture to a clean, analysis-ready dataset.
 * Provide exploratory data analysis (EDA) and visualizations of the generated dataset.
-* Enable reproducibility and future extension for research or production use.
+
+> **Note:**  
+> The provided notebooks/scripts reflect the **exact workflow and environment used during the internship**, including Google Colab and Google Drive file paths.  
+> **To re-run any code, please adapt all file paths to your own environment (local, Colab, etc.).**  
+> These notebooks are shared for transparency and documentation, not for direct out-of-the-box execution.
 
 ## 📁 Repository Structure
 
@@ -25,43 +29,30 @@ This project aims to:
 ├── README.md                             # This file
 ```
 
-## 🚀 Quick Start
 
-1. **Clone the repository:**
+## 🚀 How to Use
 
-   ```bash
-   git clone https://github.com/Noah-213/cerist-http-malicious-dataset.git
-   cd cerist-http-malicious-dataset
-   ```
+- **Browse the notebooks (`.ipynb`):**  
+  Each notebook shows the processing steps performed during the internship.  
+  > **Paths and file locations correspond to Google Drive (Colab). Adapt as needed to run locally.**
 
-2. **Set up the environment:**
+- **Datasets:**  
+  The most important artifact is the **final combined/shuffled CSV** (`data/combined_all_shuffled.csv`), ready for downstream use.
 
-   * Recommended: Python 3.9+
-   * Install requirements:
-
-     ```bash
-     pip install -r requirements.txt
-     ```
-   * Main libraries: `pyshark`, `pandas`, `numpy`, `matplotlib`, `seaborn`, `jupyter`
-
-3. **Run notebooks in order:**
-   Open and execute each notebook (`STEP1_...` to `STEP6_...`) following the comments and instructions.
-
-4. **Explore the results:**
-
-   * See the `data/` folder for generated datasets.
-   * See the `figures/` folder for all plots and visuals.
+- **Dependencies:**  
+  Key Python packages: `pyshark`, `pandas`, `numpy`, `matplotlib`, `seaborn`, `jupyter`.  
+  See `requirements.txt` (if present) for a full list.
 
 ## 📊 Dataset Description
 
 * **Sources:** Simulated HTTP attack traffic extracted from PCAP files.
 * **Attack types covered:** LFI, SQLi, SSTI, XSS, XML, CMD Injection, etc.
-* **Main fields:** HTTP method, URL, headers, body, IPs, ports, timestamps, attack\_tag.
-* **No benign/background traffic included** (see report for limitations and how to extend with other datasets).
+* **Main fields:** HTTP method, URL, headers, body, IPs, ports, timestamps, `attack_tag`.
+* **No benign/background traffic included** (see report for limitations and possible extensions).
 
 ## 📚 Documentation
 
-For detailed explanations, methodology, and figures, please refer to the final internship report (`rapport.pdf` if provided) or the notebooks themselves.
+For detailed explanations, methodology, and figures, please refer to the final internship report (`rapport.pdf`, if provided), or directly explore the notebooks.
 
 ## 💡 Citation
 
