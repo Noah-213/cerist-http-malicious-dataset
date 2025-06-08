@@ -18,6 +18,9 @@ This project aimed to:
 ## 📁 Repository Structure
 
 ```
+├── data/                                 # All generated intermediate and final datasets (PCAP, JSON, CSV, LOG)
+├── figures/                              # Plots and figures generated during EDA
+├── README.md                             # This file
 ├── STEP1_Pcap_To_Json_Pyshark.ipynb      # Extraction of HTTP packets from PCAP (PyShark)
 ├── STEP2_Cleaning_Flattening_Json.ipynb  # Cleaning and flattening of raw JSON files
 ├── STEP3_Json_To_CSV.ipynb               # Conversion of JSON to flat CSV
@@ -25,9 +28,6 @@ This project aimed to:
 ├── STEP5_CSV_to_Apache_log.ipynb         # Generation of Apache-like log files
 ├── STEP6_Exploratory_Data_Analysis.ipynb  # EDA and data visualizations
 ├── requirements.txt                      # Key dependencies and Python packages
-├── data/                                 # All generated intermediate and final datasets (PCAP, JSON, CSV, LOG)
-├── figures/                              # Plots and figures generated during EDA
-├── README.md                             # This file
 ```
 
 
