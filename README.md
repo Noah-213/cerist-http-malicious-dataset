@@ -20,7 +20,7 @@ This project aims to:
 ├── STEP4_Combine_CSV.ipynb               # Combining all CSVs into a global dataset
 ├── STEP5_CSV_to_Apache_log.ipynb         # Generation of Apache-like log files
 ├── STEP6_Exploratory_Data_Analysis.ipynb  # EDA and data visualizations
-├── data/                                 # All generated intermediate and final datasets (JSON, CSV, LOG)
+├── data/                                 # All generated intermediate and final datasets (PCAP, JSON, CSV, LOG)
 ├── figures/                              # Plots and figures generated during EDA
 ├── README.md                             # This file
 ```
