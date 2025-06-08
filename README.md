@@ -39,9 +39,8 @@ This project aimed to:
 - **Datasets:**  
   The most important artifact is the **final combined/shuffled CSV** (`data/combined_all_shuffled.csv`), ready for downstream use.
 
-- **Dependencies:**  
-  Key Python packages: `pyshark`, `pandas`, `numpy`, `matplotlib`, `seaborn`, `jupyter`.  
-  See `requirements.txt` (if present) for a full list.
+- **Dependencies:**   
+  See `requirements.txt` for a full list.
 
 ## 📊 Dataset Description
 
