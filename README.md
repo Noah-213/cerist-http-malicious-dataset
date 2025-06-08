@@ -20,6 +20,7 @@ This project aimed to:
 ```
 ├── data/                                 # All generated intermediate and final datasets (PCAP, JSON, CSV, LOG)
 ├── figures/                              # Plots and figures generated during EDA
+├── INTERNSHIP_REPORT_CERIST.pdf          # Final report: all methodology, results, figures, and discussion
 ├── README.md                             # This file
 ├── STEP1_Pcap_To_Json_Pyshark.ipynb      # Extraction of HTTP packets from PCAP (PyShark)
 ├── STEP2_Cleaning_Flattening_Json.ipynb  # Cleaning and flattening of raw JSON files
@@ -52,7 +53,7 @@ This project aimed to:
 
 ## 📚 Documentation
 
-For detailed explanations, methodology, and figures, please refer to the final internship report (`rapport.pdf`, if provided), or directly explore the notebooks.
+For detailed explanations, methodology, and figures, please refer to the final internship report (`INTERNSHIP_REPORT_CERIST.pdf`), or directly explore the notebooks.
 
 ## 💡 Citation
 
