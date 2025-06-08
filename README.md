@@ -39,7 +39,7 @@ This project aimed to:
   > **Paths and file locations correspond to Google Drive (Colab). Adapt as needed to run locally.**
 
 - **Datasets:**  
-  The most important artifact is the **final combined/shuffled CSV** (`data/combined_all_shuffled.csv`), ready for downstream use.
+  The most important artifact is the **final combined/shuffled CSV** (`data/STEP4_COMBINED_CSV/combined_all_shuffled.csv`), ready for downstream use.
 
 - **Dependencies:**   
   See `requirements.txt` for a full list.
