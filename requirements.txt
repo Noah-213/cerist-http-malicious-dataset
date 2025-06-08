@@ -1,0 +1,17 @@
+# requirements.txt
+
+pyshark
+nest_asyncio
+pandas
+numpy
+matplotlib
+seaborn
+jsonschema  # (Recommended if you want to validate JSON structures, but not directly imported)
+# The following are Python standard library modules and do NOT need to be listed:
+# os, glob, json, datetime, random, pprint
+
+# Optional: If you use Jupyter notebooks, add:
+notebook
+ipykernel
+
+# If you run code in Google Colab, no need to add 'google.colab', as it's only for Colab runtime.
